@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query id="nikon">
+	<search>nikon coolpix</search>
+	<minPrice>10</minPrice>
+	<titlelist>s4300</titlelist>
+	<blacklist>L11,L4,P100,S3700,s4150,L29,L10,L2,L13,5700,4600,s210,s550</blacklist>
+</query>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query id="macbook">
+	<search>macbook</search>
+	<minPrice>200</minPrice>
+	<titlelist>macbook</titlelist>
+	<blacklist>gold,12,i7,15,air,250,16gb,16,4,4gb,2008,2009,2010,2011,2012,2013,2015,A1278,A1181,itecnomarket</blacklist>
+</query>

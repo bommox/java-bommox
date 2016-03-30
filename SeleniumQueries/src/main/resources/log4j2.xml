@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="error" strict="true" name="XMLConfigTest"
+	packages="org.apache.logging.log4j.test">
+	<Properties>
+		<Property name="filename-descarte">target/descarte.txt</Property>
+		<Property name="filename-seleccion">target/seleccion.txt</Property>
+	</Properties>
+	<Filter type="ThresholdFilter" level="debug" />
+	<Appenders>
+		<Appender type="Console" name="STDOUT">
+			<Layout type="PatternLayout" pattern="%d %p [%t] --> %m%n" />
+		</Appender>
+		<Appender type="File" name="FileDescarte" fileName="${filename-descarte}">
+			<Layout type="PatternLayout">
+				<Pattern>%m%n</Pattern>
+			</Layout>
+		</Appender>
+		<Appender type="File" name="FileSeleccion" fileName="${filename-seleccion}">
+			<Layout type="PatternLayout">
+				<Pattern>%m%n</Pattern>
+			</Layout>
+		</Appender>
+	</Appenders>
+	<Loggers>
+		<Logger name="descarte" level="debug" additivity="true">
+			<AppenderRef ref="FileDescarte" />
+		</Logger>
+		<Logger name="seleccion" level="debug" additivity="true">
+			<AppenderRef ref="FileSeleccion" />
+		</Logger>
+		<Root level="trace">
+			<AppenderRef ref="STDOUT" />
+		</Root>
+	</Loggers>
+</Configuration>
